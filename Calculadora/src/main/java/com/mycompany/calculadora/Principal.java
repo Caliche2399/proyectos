@@ -68,6 +68,45 @@ public class Principal {
                         
                         //fin del case
                         break;
+                    case "3":
+                        strOpcion = "Multiplicacion";
+                        System.out.println(""+strOpcion);
+                        
+                        for (int i = 0; i<2;i++){
+                            System.out.println("Ingrese el valor"+(i+1) + ":");
+                            fltArrNumeros[i]=objInput.nextFloat();   
+                        }
+                        
+                        fltResultado = fltArrNumeros[0] * fltArrNumeros[1];
+                        
+                        //control
+                        blnError = false;
+                        
+                        //fin del case
+                        break;
+                      case "4":
+                        strOpcion = "Multiplicacion";
+                        System.out.println(""+strOpcion);
+                        
+                        
+     
+                        for (int i = 0; i<2;i++){
+                            System.out.println("Ingrese el valor"+(i+1) + ":");
+                            fltArrNumeros[i]=objInput.nextFloat(); 
+
+                        }
+                        if(fltArrNumeros[1]!=0 ){
+                            fltResultado = fltArrNumeros[0] / fltArrNumeros[1];
+                            }else {
+                            System.out.println("No se puede dividir entre cero");
+                        }
+
+                        //control
+                        blnError = false;
+                        
+                        //fin del case
+                        break;
+                        
                         
                     default:
                         //Error
