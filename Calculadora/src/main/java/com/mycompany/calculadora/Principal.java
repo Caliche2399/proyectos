@@ -85,7 +85,7 @@ public class Principal {
                         //fin del case
                         break;
                       case "4":
-                        strOpcion = "Multiplicacion";
+                        strOpcion = "Division";
                         System.out.println(""+strOpcion);
                         
                         
