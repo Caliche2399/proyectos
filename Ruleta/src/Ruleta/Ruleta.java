@@ -23,7 +23,7 @@ public class Ruleta {
                 int creditos = 100;
                 int[] intArrNumeros = new int [2];
                 String[] strArrColores =  new String [2];
-                
+
                 //Menu
                 System.out.println("--Bienvenido a Casino Royal--");
                 System.out.println("1. Apostar en ruleta (10 CREDITOS)");
@@ -93,6 +93,7 @@ public class Ruleta {
                             //Capturar el buffer para continuar apostando
                             Scanner objInput2 = new Scanner(System.in);
                             strContinuarApuesta = objInput2.nextLine();
+                            strContinuar = strContinuarApuesta;
                         
                         }while(strContinuarApuesta.equals("S")||strContinuarApuesta.equals("s"));
                         
@@ -109,7 +110,6 @@ public class Ruleta {
                         //sale del case
                 
                 }
-
     }
     
 }
